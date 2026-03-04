@@ -137,6 +137,8 @@ function fillTable(nations) {
         saveButton.addEventListener('click', function() {
             console.log("Clicked!");
             GM_setValue('fid', facIdInput.value);
+			window.location.reload();
+
         });
         content.appendChild(saveButton);
 
@@ -158,6 +160,8 @@ function fillTable(nations) {
         saveButton2.textContent = 'Save Target Faction ID';
         saveButton2.addEventListener('click', function() {
             GM_setValue('tfid', targetIdInput.value);
+			window.location.reload();
+
         });
         content.appendChild(saveButton2);
 
@@ -178,6 +182,8 @@ function fillTable(nations) {
         saveButton3.textContent = 'Save Target Faction Nation Number';
         saveButton3.addEventListener('click', function() {
             GM_setValue('tfmult', targetMultInput.value);
+			window.location.reload();
+
         });
         content.appendChild(saveButton3);
 
